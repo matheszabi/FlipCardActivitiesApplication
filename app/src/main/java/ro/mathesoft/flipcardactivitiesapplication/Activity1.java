@@ -128,7 +128,7 @@ public class Activity1 extends Activity implements IAnimationConstant {
             Bundle bundle = new Bundle();
             bundle.putBoolean(Activity2.BUNDLE_ROTATE_IN, true);
             intent.putExtras(bundle);
-            startActivityForResult(intent, Activity2.Acitvity1RequestCode, bundle);
+            startActivity(intent);
             // disable Android's default animation, because we have a new animation on Activity2
             overridePendingTransition(0, 0);
         }
