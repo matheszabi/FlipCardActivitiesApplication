@@ -14,7 +14,6 @@ import android.view.animation.Transformation;
 
 public class Activity2 extends Activity implements IAnimationConstant {
 
-    public static final int Acitvity1RequestCode = 123456;
 
     public static final String BUNDLE_ROTATE_IN = "BUNDLE_ROTATE_IN";
     private boolean shouldRotateIn = false;
@@ -23,7 +22,6 @@ public class Activity2 extends Activity implements IAnimationConstant {
     private Camera camera;
     private View viewRoot;
 
-    private MyApplication myApplication;
     private FlipAnimationIn flipAnimationIn = new FlipAnimationIn();
 
     @Override
@@ -31,7 +29,6 @@ public class Activity2 extends Activity implements IAnimationConstant {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity2);
 
-        myApplication = (MyApplication) getApplication();
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
